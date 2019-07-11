@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-4">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Materi Arab 1</title>
+		<meta name="description" content="Bookblock: A Content Flip Plugin - Demo 4" />
+		<meta name="keywords" content="javascript, jquery, plugin, css3, flip, page, 3d, booklet, book, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<!-- custom demo style -->
+		<link rel="stylesheet" type="text/css" href="css/demo4.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+		/* img {
+    width: 100%;
+    height: auto;
+}*/
+		/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup:hover {
+    /*background: yellow;*/ color: red;
+}
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  /* color: red; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup1:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup1 .popuptext1 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup1 .popuptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show1 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup2:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup2 .show2 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup3:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup3 .popuptext3 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup3 .popuptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup3 .show3 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup4 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup4:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup4 .popuptext4 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup4 .popuptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup4 .show4 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup5 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup5:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup5 .popuptext5 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup5 .popuptext5::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup5 .show5 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*untuk perempuan*/
+/* Popup container - can be anything you want */
+.popup6 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup6:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup6 .popuptext6 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup6 .popuptext6::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup6 .show6 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup7 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup7:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup7 .popuptext7 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup7 .popuptext7::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup7 .show7 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup8 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup8:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup8 .popuptext8 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup8 .popuptext8::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup8 .show8{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup9 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup9:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup9 .popuptext9 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup9 .popuptext9::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup9 .show9 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup10 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup10:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup10 .popuptext10 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup10 .popuptext10::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup10 .show10 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup11 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup11:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup11 .popuptext11 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup11 .popuptext11::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup11 .show11 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup12 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup12:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup12 .popuptext12 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup12 .popuptext12::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup12 .show12 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup13 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup13:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup13 .popuptext13 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup13 .popuptext13::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup13 .show13 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup14 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup14:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup14 .popuptext14 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup14 .popuptext14::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup14 .show14 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup16 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup16:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup16 .popuptext16 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup16 .popuptext16::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup16 .show16 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup15 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup15:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup15 .popuptext15 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup15 .popuptext15::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup15 .show15 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup17 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup17:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup17 .popuptext17 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup17 .popuptext17::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup17 .show17 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup18 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup18:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup18 .popuptext18 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup18 .popuptext18::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup18 .show18 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup19 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup19:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup19 .popuptext19 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup19 .popuptext19::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup19 .show19 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup20 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup20:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup20 .popuptext20 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup20 .popuptext20::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup20 .show20 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup21 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup21:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup21 .popuptext21 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup21 .popuptext21::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup21 .show21 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup22 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup22:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup22 .popuptext22 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup22 .popuptext22::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup22 .show22 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup23 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup23:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup23 .popuptext23 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup23 .popuptext23::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup23 .show23 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup24 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup24:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup24 .popuptext24 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup24 .popuptext24::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup24 .show24 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup25 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup25:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup25 .popuptext25 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup25 .popuptext25::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup25 .show25 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup26 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup26:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup26 .popuptext26 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup26 .popuptext26::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup26 .show26 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup27 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup27:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup27 .popuptext27 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup27 .popuptext27::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup27 .show27 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup28 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup28:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup28 .popuptext28 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup28 .popuptext28::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup28 .show28 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*baru ini */
+/* Popup container - can be anything you want */
+.popup29 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup29:hover {
+    /*background: yellow;*/ color: red;
+}
+
+/* The actual popup */
+.popup29 .popuptext29 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup29 .popuptext29::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup29 .show29 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+	</head>
+	<body>
+	<script type="text/javascript">
+<!--m.emeraldhilllampung.com-->
+if (screen.width <= 699) {
+document.location = "m/index4.html";
+}
+//
+</script>
+		<div class="container">
+			<div class="bb-custom-wrapper">
+				
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item">
+						<div class="bb-custom-firstpage">
+							<!--<h1>BookBlock <span>A Content Flip Plugin</span></h1>	
+							<nav class="codrops-demos">
+								<a href="index.html">Demo 1</a>
+								<a href="index2.html">Demo 2</a>
+								<a href="index3.html">Demo 3</a>
+								<a class="current-demo" href="index4.html">Demo 4</a>
+								<a href="index5.html">Demo 5</a>
+							</nav>
+							<nav class="codrops-nav">
+								<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/"><span>Previous Demo</span></a>
+								<a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/2012/09/03/bookblock-a-content-flip-plugin/"><span>Back to the Codrops Article</span></a>
+							</nav>-->
+							<audio id="audio_play">
+    <source src="sound/sound1.ogg" type="audio/ogg" />
+    <source src="sound/sound1.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img4.png" width="" height="" onClick="document.getElementById('audio_play').play(); return false;" />
+						</div>
+						<div class="bb-custom-side">
+							<table cellpadding="10"><tr><td>
+							<audio id="audio_play5">
+							<source src="sound/sound2.ogg" type="audio/ogg" />
+    <source src="sound/sound2.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play6">
+							<source src="sound/sound3.ogg" type="audio/ogg" />
+    <source src="sound/sound3.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play7">
+							<source src="sound/sound4.ogg" type="audio/ogg" />
+    <source src="sound/sound4.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play8">
+							<source src="sound/sound5.ogg" type="audio/ogg" />
+    <source src="sound/sound5.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play9">
+							<source src="sound/sound6.ogg" type="audio/ogg" />
+    <source src="sound/sound6.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play10">
+							<source src="sound/sound7.ogg" type="audio/ogg" />
+    <source src="sound/sound7.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play11">
+							<source src="sound/sound8.ogg" type="audio/ogg" />
+    <source src="sound/sound8.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play12">
+							<source src="sound/sound9.ogg" type="audio/ogg" />
+    <source src="sound/sound9.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play13">
+							<source src="sound/sound10.ogg" type="audio/ogg" />
+    <source src="sound/sound10.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play14">
+							<source src="sound/sound11.ogg" type="audio/ogg" />
+    <source src="sound/sound11.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play15">
+							<source src="sound/sound12.ogg" type="audio/ogg" />
+    <source src="sound/sound12.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play16">
+							<source src="sound/sound13.ogg" type="audio/ogg" />
+    <source src="sound/sound13.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play17">
+							<source src="sound/sound15.ogg" type="audio/ogg" />
+    <source src="sound/sound15.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play18">
+							<source src="sound/sound16.ogg" type="audio/ogg" />
+    <source src="sound/sound16.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play19">
+							<source src="sound/sound17.ogg" type="audio/ogg" />
+    <source src="sound/sound17.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play20">
+							<source src="sound/sound18.ogg" type="audio/ogg" />
+    <source src="sound/sound18.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play22">
+							<source src="sound/sound25.ogg" type="audio/ogg" />
+    <source src="sound/sound25.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play23">
+							<source src="sound/sound26.ogg" type="audio/ogg" />
+    <source src="sound/sound26.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play24">
+							<source src="sound/sound27.ogg" type="audio/ogg" />
+    <source src="sound/sound27.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play25">
+							<source src="sound/sound28.ogg" type="audio/ogg" />
+    <source src="sound/sound28.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play25">
+							<source src="sound/sound28.ogg" type="audio/ogg" />
+    <source src="sound/sound28.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play26">
+							<source src="sound/sound46.ogg" type="audio/ogg" />
+    <source src="sound/sound46.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play27">
+							<source src="sound/sound44.ogg" type="audio/ogg" />
+    <source src="sound/sound44.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play28">
+							<source src="sound/sound48.ogg" type="audio/ogg" />
+    <source src="sound/sound48.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play29">
+							<source src="sound/sound50.ogg" type="audio/ogg" />
+    <source src="sound/sound50.mp3" type="audio/mpeg" />
+	</audio>
+	<audio id="audio_play30">
+							<source src="sound/sound51.ogg" type="audio/ogg" />
+    <source src="sound/sound51.mp3" type="audio/mpeg" />
+	</audio>
+<div class="popup" onclick="myFunction()"><h1>صَباَح النُّور</h1><!--<img src="images/arab/2.png" width="" height="">-->
+  <span class="popuptext" id="myPopup">Selamat Pagi</span>
+</div>
+</td><td>
+<div class="popup1" onclick="myFunction1()"><h1>صَباَح الخَيْر</h1><!--<img src="images/arab/1.png" width="" height="">-->
+  <span class="popuptext1" id="myPopup1">Selamat Pagi</span>
+</div>
+</td></tr><tr><td>
+<div class="popup3" onclick="myFunction3()"><h1>اَنَاِبِخَيْر، شُكْراً</h1><!--<img src="images/arab/4.png" width="" height="">-->
+  <span class="popuptext3" id="myPopup3">Kabar Saya Baik, Terima Kasih</span>
+</div>
+</td><td>
+<div class="popup2" onclick="myFunction2()"><h1>?كَيْفَ حَا لُكَ</h1><!--<img src="images/arab/3.png" width="" height="">-->
+  <span class="popuptext2" id="myPopup2">Bagaimana Kabarmu?</span>
+</div></td></tr>
+<tr><td>
+<div class="popup4" onclick="myFunction4()"><h1>نَعَمْ، أَنَا عَرَ بِي</h1><!--<img src="images/arab/6.png" width="" height="">-->
+  <span class="popuptext4" id="myPopup4">Iya, Saya Orang Arab</span>
+</div>
+</td><td>
+<div class="popup5" onclick="myFunction5()"><h1>?هَلْ اَنْتَ عَرَبِي</h1><!--<img src="images/arab/5.png" width="" height="">-->
+  <span class="popuptext5" id="myPopup5">Apakah Kamu Orang Arab?</span>
+</div></td></tr></table>
+
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							
+							<img src="images/arab/img15.png" width="" height="">
+							
+							</div>
+						<div class="bb-custom-side">
+							
+							<table cellpadding="10"><tr><td>
+<div class="popup6" onclick="myFunction6()"><h1>صَباَح النُّور</h1><!--<img src="images/arab/2.png" width="" height="">-->
+  <span class="popuptext6" id="myPopup6">Selamat Pagi</span>
+</div>
+</td><td>
+<div class="popup7" onclick="myFunction7()"><h1 id="tes">صَباَح الخَيْر</h1><!--<img src="images/arab/1.png" width="" height="">-->
+  <span class="popuptext7" id="myPopup7">Selamat Pagi</span>
+</div>
+</div></td></tr>
+<tr><td>
+<div class="popup8" onclick="myFunction8()"><h1>اَنَاِبِخَيْر، شُكْراً</h1><!--<img src="images/arab/4.png" width="" height="">-->
+  <span class="popuptext8" id="myPopup8">Kabar Saya Baik, Terima Kasih</span>
+</div>
+</td><td>
+<div class="popup9" onclick="myFunction9()"><h1>?كَيْفَ حَا لُكِ</h1><!--<img src="images/arab/7.png" width="" height="">-->
+  <span class="popuptext9" id="myPopup9">Bagaimana Kabarmu?</span>
+</div></td></tr>
+<tr><td>
+<div class="popup10" onclick="myFunction10()"><h1>نَعَمْ , أَنَا عَرَبِيَّة</h1><!--<img src="images/arab/9.png" width="" height="">-->
+  <span class="popuptext10" id="myPopup10">Iya, Saya Orang Arab</span>
+</div>
+</td><td>
+<div class="popup11" onclick="myFunction11()"><h1>هَلْ أَنْتِ عَرَبِــيَّة؟</h1><!--<img src="images/arab/8.png" width="" height="">-->
+  <span class="popuptext11" id="myPopup11">Apakah Kamu Orang Arab?</span>
+</div></td></tr></table>
+
+							
+							</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<table align="center"><tr><td><audio id="audio_play1">
+    <source src="sound/sound14.ogg" type="audio/ogg" />
+    <source src="sound/sound14.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img3.png" width="" height="" onClick="document.getElementById('audio_play1').play(); return false;" /></td></tr>
+						<tr><td align="center"><div class="popup16" onclick="myFunction16()"><h1>مِصْر</h1>
+						<span class="popuptext16" id="myPopup16">Mesir</span></td></tr></table>
+						</div>
+						<div class="bb-custom-side">
+						<audio id="audio_play3">
+        <source src="sound/gabungan2.mp3" type="audio/mpeg" />
+</audio><img src="images/arab/img26.jpg" width="" height="" onClick="document.getElementById('audio_play3').play(); return false;">
+							<table><tr><td><div class="popup14" onclick="myFunction14()"><h1>اَنَا مِنْ مِصْر</h1>
+							<span class="popuptext14" id="myPopup14">Saya Dari Mesir</span></td></tr><!--<p>Wafer -->
+							<tr><td><div class="popup15" onclick="myFunction15()"><h1>اَناَ مِصْرِيَّة</h1>
+							<span class="popuptext15" id="myPopup15">Saya Orang Mesir</span></td></tr></table>
+							<audio id="audio_play2">
+        <source src="sound/gabungan1.mp3" type="audio/mpeg" />
+</audio><img src="images/arab/img24.png" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+							<table><tr><td><div class="popup12" onclick="myFunction12()"><h1>اَنَا مِنْ مِصْر</h1>
+							<span class="popuptext12" id="myPopup12">Saya Dari Mesir</span></td></tr><!--<p>Wafer -->
+							<tr><td><div class="popup13" onclick="myFunction13()"><h1>اَناَ مِصْرِي</h1>
+							<span class="popuptext13" id="myPopup13">Saya Orang Mesir</span></td></tr></table>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<table align="center"><tr><td><audio id="audio_play21">
+    <source src="sound/sound24.ogg" type="audio/ogg" />
+<source src="sound/sound24.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img74.jpg" width="" height="" onClick="document.getElementById('audio_play21').play(); return false;" /></td></tr>
+						<tr><td align="center"><div class="popup17" onclick="myFunction17()"><h1>إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext17" id="myPopup17">Indonesia</span></td></tr></table>
+						</div>
+						<div class="bb-custom-side">
+						<img src="images/arab/img38.jpg" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+						<table><tr><td><div class="popup18" onclick="myFunction18()"><h1>اَنَا مِنْ إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext18" id="myPopup18">Saya Dari Indonesia</span></div></td></tr>
+						<tr><td><div class="popup19" onclick="myFunction19()"><h1>اَنَا إِنْدُوْنِيْسِي</h1>
+						<span class="popuptext19" id="myPopup19">Saya Orang Indonesia</span></div></td></tr></table>
+						<img src="images/arab/img37.jpg" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+						<table><tr><td><div class="popup20" onclick="myFunction20()"><h1>اَنَا مِنْ إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext20" id="myPopup20">Saya Dari Indonesia</span></td></tr>
+						<tr><td><div class="popup21" onclick="myFunction21()"><h1>اَنَا إِنْدُوْنِيْسِيَّة</h1>
+						<span class="popuptext21" id="myPopup21">Saya Orang Indonesia</span></td></tr></table>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<table align="center"><tr><td><audio id="audio_play1">
+    <source src="sound/sound14.ogg" type="audio/ogg" />
+    <source src="sound/sound14.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img3.png" width="" height="" onClick="document.getElementById('audio_play1').play(); return false;" /></td></tr>
+						<tr><td align="center"><div class="popup16" onclick="myFunction16()"><h1>مِصْر</h1>
+						<span class="popuptext16" id="myPopup16">Mesir</span></td></tr></table>
+						</div>
+						<div class="bb-custom-side">
+						<img src="images/arab/img26.jpg" width="" height="" onClick="document.getElementById('audio_play3').play(); return false;">
+						<table><tr><td><div class="popup22" onclick="myFunction22()"><h1>مِنْ أَيْنَ أَنْتِ؟</h1>
+						<span class="popuptext22" id="myPopup22">Dari mana kamu?</span></td></tr>
+						<tr><td><div class="popup23" onclick="myFunction23()"><h1>اَنَا مِنْ مِصْر</h1>
+						<span class="popuptext23" id="myPopup23">Saya dari Mesir</span></td></tr></table>
+						<img src="images/arab/img24.png" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+						<table><tr><td><div class="popup24" onclick="myFunction24()"><h1>?مِنْ أَيْنَ أَنْتَ</h1>
+						<span class="popuptext24" id="myPopup24">Dari mana kamu?</span></td></tr>
+						<tr><td><div class="popup25" onclick="myFunction25()"><h1>اَنَا مِنْ مِصْر</h1>
+						<span class="popuptext25" id="myPopup25">Saya dari Mesir</span></td></tr></table>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<table align="center"><tr><td><audio id="audio_play21">
+    <source src="sound/sound24.ogg" type="audio/ogg" />
+<source src="sound/sound24.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img74.jpg" width="" height="" onClick="document.getElementById('audio_play21').play(); return false;" /></td></tr>
+						<tr><td align="center"><div class="popup17" onclick="myFunction17()"><h1>إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext17" id="myPopup17">Indonesia</span></td></tr></table>
+						</div>
+						<div class="bb-custom-side">
+						<img src="images/arab/img38.jpg" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+						<table><tr><td><div class="popup26" onclick="myFunction26()"><h1>مِنْ أَيْنَ  هُوَ؟</h1>
+						<span class="popuptext26" id="myPopup26">Dari mana Dia?</span></div></td></tr>
+						<tr><td><div class="popup27" onclick="myFunction27()"><h1>هُوَ مِنْ إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext27" id="myPopup27">Dia Dari Indonesia</span></div></td></tr><tr><td><img src="images/arab/img24.png" width="150px" height="150px"></td></tr></table>
+						<img src="images/arab/img37.jpg" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+						<table><tr><td><div class="popup28" onclick="myFunction28()"><h1>مِنْ أَيْنَ هِيَ؟</h1>
+						<span class="popuptext28" id="myPopup28">Dari mana Dia?</span></td></tr>
+						<tr><td><div class="popup29" onclick="myFunction29()"><h1>هِيَ مِنْ إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext29" id="myPopup29">Dia Orang Indonesia</span></td></tr><tr><td><img src="images/arab/img26.jpg" width="150px" height="150px" ></td></tr></table>
+							</div>
+						<div class="bb-custom-side">
+							
+							</div>
+					</div>
+					
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<table align="center"><tr><td><audio id="audio_play1">
+    <source src="sound/sound14.ogg" type="audio/ogg" />
+    <source src="sound/sound14.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img3.png" width="" height="" onClick="document.getElementById('audio_play1').play(); return false;" /></td></tr>
+						<tr><td align="center"><div class="popup16" onclick="myFunction16()"><h1>مِصْر</h1>
+						<span class="popuptext16" id="myPopup16">Mesir</span></td></tr></table>
+						</div>
+						<div class="bb-custom-side">
+						<img src="images/arab/img24.png" width="150px" height="150px">
+						<table><tr><td><h1>هَلْ  أَنْتَ مِصْرِي؟</h1>
+						</td></tr>
+						<tr><td><h1>نَعَمْ , أَنَا مِصْرِي.</h1>
+						</td></tr></table>
+						<img src="images/arab/img37.jpg" width="" height="" onClick="document.getElementById('audio_play2').play(); return false;">
+						<table><tr><td><h1>هَلْ أَنْتِ  مِصْرِيَّة؟</h1>
+						</td></tr>
+						<tr><td><h1>نَعَمْ اَناَ مِصْرِيَّة</h1>
+						</td></tr><tr><td></table>
+						</div>
+					</div>
+					
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<table align="center"><tr><td><audio id="audio_play21">
+    <source src="sound/sound24.ogg" type="audio/ogg" />
+<source src="sound/sound24.mp3" type="audio/mpeg" />
+</audio>
+<img src="images/arab/img74.jpg" width="" height="" onClick="document.getElementById('audio_play21').play(); return false;" /></td></tr>
+						<tr><td align="center"><div class="popup17" onclick="myFunction17()"><h1>إِنْدُوْنِيْسِياَ</h1>
+						<span class="popuptext17" id="myPopup17">Indonesia</span></td></tr></table>
+						</div>
+						<div class="bb-custom-side">
+						
+						<table cellpadding="10"><tr><td><img src="images/arab/img38.jpg" width="150px" height="150px"></td></tr><tr><td><h1>?هَلْ  أَنْتَ مِنْ إِنْدُوْنِيْسِياَ</h1>
+						</td></tr>
+						<tr><td><h1>نَعَمْ , اَنَا مِنْ إِنْدُوْنِيْسِياَ </h1>
+						</td></tr></table>
+						<table cellpadding="10" ></table>
+						<table cellpadding="10"><tr><td><img src="images/arab/img37.jpg" width="150px" height="150px"></td></tr><tr><td><h1>?هَلْ أَنْتِ مِنْ إِنْدُوْنِيْسِياَ</h1>
+						</td></tr>
+						<tr><td><h1>نَعَمْ , اَنَا مِنْ إِنْدُوْنِيْسِياَ </h1>
+						</td></tr><tr><td></table>
+							
+						</div>
+					</div>
+					
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/arab/img74.jpg"><img src="images/arab/img3.png">
+						</div>
+						<div class="bb-custom-side">
+							<table cellpadding="20"><tr><td><h1>لَا , أَنَا مِنْ مِصْر </h1><img src="images/arab/img24.png" width="150px" height="150px"></td><td>
+						<h1> هَلْ  أَنْتَ مِنْ إِنْدُوْنِيْسِيَا؟ </h1><img src="images/arab/img38.jpg" width="150px" height="150px"></td></tr></table>
+						</div>
+					</div>
+					
+					
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/arab/img3.png"><img src="images/arab/img74.jpg">
+						</div>
+						<div class="bb-custom-side">
+							<table cellpadding="20"><tr><td><h1>هَلْ أَنْتِ  مِصْرِيَّة؟</h1><img src="images/arab/img24.png" width="150px" height="150px"></td><td>
+						<h1>لَا , اَنَا إِنْدُوْنِيْسِيَّة </h1><img src="images/arab/img37.jpg" width="150px" height="150px"></td></tr></table>
+						</div>
+					</div>
+					
+				</div>
+					
+				<nav>
+					<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+					<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+					<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+					<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+				</nav>
+
+			</div>
+
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 1000,
+							shadowSides : 0.8,
+							shadowFlip : 0.4
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+						
+						var $slides = config.$bookBlock.children();
+
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
+
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+						
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+		<script>
+// When the user clicks on div, open the popup
+//percakapan
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  setTimeout(function(){ popup.style.visibility = "hidden";}, 3000); 
+  popup.classList.toggle("show");  
+  document.getElementById('audio_play6').play(); return false; 
+}
+function myFunction1() {
+  var popup1 = document.getElementById("myPopup1");
+  setTimeout(function(){ popup1.style.visibility = "hidden";}, 3000); 
+  popup1.classList.toggle("show1");
+  document.getElementById('audio_play5').play(); return false;
+}
+function myFunction2() {
+  var popup2 = document.getElementById("myPopup2");
+  setTimeout(function(){ popup2.style.visibility = "hidden";}, 3000); 
+  popup2.classList.toggle("show2");
+  document.getElementById('audio_play7').play(); return false;
+}
+function myFunction3() {
+  var popup3 = document.getElementById("myPopup3");
+  setTimeout(function(){ popup3.style.visibility = "hidden";}, 3000); 
+  popup3.classList.toggle("show3");
+  document.getElementById('audio_play8').play(); return false;
+}
+function myFunction4() {
+  var popup4 = document.getElementById("myPopup4");
+  setTimeout(function(){ popup4.style.visibility = "hidden";}, 3000); 
+  popup4.classList.toggle("show4");
+   document.getElementById('audio_play10').play(); return false;
+}
+function myFunction5() {
+  var popup5 = document.getElementById("myPopup5");
+  setTimeout(function(){ popup5.style.visibility = "hidden";}, 3000); 
+  popup5.classList.toggle("show5");
+   document.getElementById('audio_play9').play(); return false;
+}
+//Perempuan
+function myFunction6() {
+  var popup6 = document.getElementById("myPopup6");
+  setTimeout(function(){ popup6.style.visibility = "hidden";}, 3000); 
+  popup6.classList.toggle("show6");
+  document.getElementById('audio_play12').play(); return false;
+}
+function myFunction7() {
+  var popup7 = document.getElementById("myPopup7");
+  setTimeout(function(){ popup7.style.visibility = "hidden";}, 3000); 
+  popup7.classList.toggle("show7");
+  document.getElementById('audio_play11').play(); return false;
+}
+function myFunction8() {
+  var popup8 = document.getElementById("myPopup8");
+  setTimeout(function(){ popup8.style.visibility = "hidden";}, 3000); 
+  popup8.classList.toggle("show8");
+  document.getElementById('audio_play14').play(); return false;
+}
+function myFunction9() {
+  var popup9 = document.getElementById("myPopup9");
+  setTimeout(function(){ popup9.style.visibility = "hidden";}, 3000); 
+  popup9.classList.toggle("show9");
+  document.getElementById('audio_play13').play(); return false;
+}
+function myFunction10() {
+  var popup10 = document.getElementById("myPopup10");
+  setTimeout(function(){ popup10.style.visibility = "hidden";}, 3000); 
+  popup10.classList.toggle("show10");
+  document.getElementById('audio_play16').play(); return false;
+}
+function myFunction11() {
+  var popup11 = document.getElementById("myPopup11");
+  setTimeout(function(){ popup11.style.visibility = "hidden";}, 3000); 
+  popup11.classList.toggle("show11");
+  document.getElementById('audio_play15').play(); return false;
+}
+
+//mesir
+function myFunction12() {
+  var popup12= document.getElementById("myPopup12");
+  setTimeout(function(){ popup12.style.visibility = "hidden";}, 3000); 
+  popup12.classList.toggle("show12");
+  document.getElementById('audio_play17').play(); return false;
+}
+function myFunction13() {
+  var popup13 = document.getElementById("myPopup13");
+  setTimeout(function(){ popup13.style.visibility = "hidden";}, 3000); 
+  popup13.classList.toggle("show13");
+  document.getElementById('audio_play18').play(); return false;
+}
+//perempuan
+function myFunction14() {
+  var popup14 = document.getElementById("myPopup14");
+  setTimeout(function(){ popup14.style.visibility = "hidden";}, 3000); 
+  popup14.classList.toggle("show14");
+  document.getElementById('audio_play19').play(); return false;
+}
+function myFunction15() {
+  var popup15 = document.getElementById("myPopup15");
+  setTimeout(function(){ popup15.style.visibility = "hidden";}, 3000); 
+  popup15.classList.toggle("show15");
+  document.getElementById('audio_play20').play(); return false;
+}
+//
+function myFunction16() {
+  var popup16 = document.getElementById("myPopup16");
+  setTimeout(function(){ popup16.style.visibility = "hidden";}, 3000); 
+  popup16.classList.toggle("show16");
+}
+function myFunction17() {
+  var popup17 = document.getElementById("myPopup17");
+  setTimeout(function(){ popup17.style.visibility = "hidden";}, 3000); 
+  popup17.classList.toggle("show17");
+}
+//indonesia
+function myFunction18() {
+  var popup18 = document.getElementById("myPopup18");
+  setTimeout(function(){ popup18.style.visibility = "hidden";}, 3000); 
+  popup18.classList.toggle("show18");
+  document.getElementById('audio_play22').play(); return false;
+}
+function myFunction19() {
+  var popup19 = document.getElementById("myPopup19");
+  setTimeout(function(){ popup19.style.visibility = "hidden";}, 3000); 
+  popup19.classList.toggle("show19");
+  document.getElementById('audio_play23').play(); return false;
+}
+//perempuan
+function myFunction20() {
+  var popup20 = document.getElementById("myPopup20");
+  setTimeout(function(){ popup20.style.visibility = "hidden";}, 3000); 
+  popup20.classList.toggle("show20");
+  document.getElementById('audio_play24').play(); return false;
+}
+function myFunction21() {
+  var popup21 = document.getElementById("myPopup21");
+  setTimeout(function(){ popup21.style.visibility = "hidden";}, 3000); 
+  popup21.classList.toggle("show21");
+  document.getElementById('audio_play25').play(); return false;
+}
+//asal negara mesir
+function myFunction22() {
+  var popup22 = document.getElementById("myPopup22");
+  setTimeout(function(){ popup22.style.visibility = "hidden";}, 3000); 
+  popup22.classList.toggle("show22");
+  document.getElementById('audio_play26').play(); return false;
+}
+function myFunction23() {
+  var popup23 = document.getElementById("myPopup23");
+  setTimeout(function(){ popup23.style.visibility = "hidden";}, 3000); 
+  popup23.classList.toggle("show23");
+  document.getElementById('audio_play19').play(); return false;
+}
+//laki-laki
+function myFunction24() {
+  var popup24 = document.getElementById("myPopup24");
+  setTimeout(function(){ popup24.style.visibility = "hidden";}, 3000); 
+  popup24.classList.toggle("show24");
+  document.getElementById('audio_play27').play(); return false;
+}
+function myFunction25() {
+  var popup25 = document.getElementById("myPopup25");
+  setTimeout(function(){ popup25.style.visibility = "hidden";}, 3000); 
+  popup25.classList.toggle("show25");
+  document.getElementById('audio_play17').play(); return false;
+}
+//asal negara indonesia
+function myFunction26() {
+  var popup26 = document.getElementById("myPopup26");
+  setTimeout(function(){ popup26.style.visibility = "hidden";}, 3000); 
+  popup26.classList.toggle("show26");
+  document.getElementById('audio_play28').play(); return false;
+  
+}
+function myFunction27() {
+  var popup27 = document.getElementById("myPopup27");
+  setTimeout(function(){ popup27.style.visibility = "hidden";}, 3000); 
+  popup27.classList.toggle("show27");
+  
+}
+//perempuan
+function myFunction28() {
+  var popup28 = document.getElementById("myPopup28");
+  setTimeout(function(){ popup28.style.visibility = "hidden";}, 3000); 
+  popup28.classList.toggle("show28");
+  document.getElementById('audio_play29').play(); return false;
+  
+}
+function myFunction29() {
+  var popup29 = document.getElementById("myPopup29");
+  setTimeout(function(){ popup29.style.visibility = "hidden";}, 3000); 
+  popup29.classList.toggle("show29");
+  document.getElementById('audio_play30').play(); return false;
+}
+
+document.getElementById("startOrStopImg").onclick = function() {
+    var audio = document.getElementById("audio");
+    if (audio.paused) audio.play();
+    else audio.pause();
+};
+</script>
+
+	</body>
+</html>
